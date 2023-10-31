@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.BiogSourceDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.BiogSourceData">
+    <!--@mbg.generated-->
+    <!--@Table BIOG_SOURCE_DATA-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_textid" jdbcType="INTEGER" property="cTextid" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_main_source" jdbcType="BOOLEAN" property="cMainSource" />
+    <result column="c_self_bio" jdbcType="BOOLEAN" property="cSelfBio" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_textid, c_pages, c_secondary_source_author, c_notes, c_main_source, 
+    c_self_bio
+  </sql>
+</mapper>

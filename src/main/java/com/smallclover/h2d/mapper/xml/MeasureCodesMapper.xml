@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.MeasureCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.MeasureCodes">
+    <!--@mbg.generated-->
+    <!--@Table MEASURE_CODES-->
+    <result column="c_measure_code" jdbcType="INTEGER" property="cMeasureCode" />
+    <result column="c_measure_desc" jdbcType="CHAR" property="cMeasureDesc" />
+    <result column="c_measure_desc_chn" jdbcType="CHAR" property="cMeasureDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_measure_code, c_measure_desc, c_measure_desc_chn
+  </sql>
+</mapper>

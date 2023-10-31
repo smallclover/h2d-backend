@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TextInstanceDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TextInstanceData">
+    <!--@mbg.generated-->
+    <!--@Table TEXT_INSTANCE_DATA-->
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_textid" jdbcType="INTEGER" property="cTextid" />
+    <result column="c_text_edition_id" jdbcType="INTEGER" property="cTextEditionId" />
+    <result column="c_text_instance_id" jdbcType="INTEGER" property="cTextInstanceId" />
+    <result column="c_instance_title_chn" jdbcType="CHAR" property="cInstanceTitleChn" />
+    <result column="c_instance_title" jdbcType="CHAR" property="cInstanceTitle" />
+    <result column="c_instance_title_trans" jdbcType="CHAR" property="cInstanceTitleTrans" />
+    <result column="c_part_of_instance" jdbcType="INTEGER" property="cPartOfInstance" />
+    <result column="c_part_of_instance_notes" jdbcType="CHAR" property="cPartOfInstanceNotes" />
+    <result column="c_pub_country" jdbcType="INTEGER" property="cPubCountry" />
+    <result column="c_pub_dy" jdbcType="INTEGER" property="cPubDy" />
+    <result column="c_pub_year" jdbcType="CHAR" property="cPubYear" />
+    <result column="c_pub_nh_code" jdbcType="INTEGER" property="cPubNhCode" />
+    <result column="c_pub_nh_year" jdbcType="INTEGER" property="cPubNhYear" />
+    <result column="c_pub_range_code" jdbcType="INTEGER" property="cPubRangeCode" />
+    <result column="c_pub_loc" jdbcType="CHAR" property="cPubLoc" />
+    <result column="c_publisher" jdbcType="CHAR" property="cPublisher" />
+    <result column="c_print" jdbcType="CHAR" property="cPrint" />
+    <result column="c_pub_notes" jdbcType="CHAR" property="cPubNotes" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_extant" jdbcType="INTEGER" property="cExtant" />
+    <result column="c_url_api" jdbcType="CHAR" property="cUrlApi" />
+    <result column="c_url_homepage" jdbcType="CHAR" property="cUrlHomepage" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_number" jdbcType="CHAR" property="cNumber" />
+    <result column="c_counter" jdbcType="CHAR" property="cCounter" />
+    <result column="c_title_alt_chn" jdbcType="CHAR" property="cTitleAltChn" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tts_sysno, c_textid, c_text_edition_id, c_text_instance_id, c_instance_title_chn, 
+    c_instance_title, c_instance_title_trans, c_part_of_instance, c_part_of_instance_notes, 
+    c_pub_country, c_pub_dy, c_pub_year, c_pub_nh_code, c_pub_nh_year, c_pub_range_code, 
+    c_pub_loc, c_publisher, c_print, c_pub_notes, c_source, c_pages, c_secondary_source_author, 
+    c_extant, c_url_api, c_url_homepage, c_notes, c_number, c_counter, c_title_alt_chn, 
+    c_created_by, c_created_date, c_modified_by, c_modified_date
+  </sql>
+</mapper>

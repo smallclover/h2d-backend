@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AppointmentTypeCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AppointmentTypeCodes">
+    <!--@mbg.generated-->
+    <!--@Table APPOINTMENT_TYPE_CODES-->
+    <result column="c_appt_type_code" jdbcType="INTEGER" property="cApptTypeCode" />
+    <result column="c_appt_type_desc_chn" jdbcType="CHAR" property="cApptTypeDescChn" />
+    <result column="c_appt_type_desc" jdbcType="CHAR" property="cApptTypeDesc" />
+    <result column="c_appt_type_desc_chn_alt" jdbcType="CHAR" property="cApptTypeDescChnAlt" />
+    <result column="c_appt_type_desc_alt" jdbcType="CHAR" property="cApptTypeDescAlt" />
+    <result column="check" jdbcType="INTEGER" property="check" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_appt_type_code, c_appt_type_desc_chn, c_appt_type_desc, c_appt_type_desc_chn_alt, 
+    c_appt_type_desc_alt, "check"
+  </sql>
+</mapper>

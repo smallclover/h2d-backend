@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionAltnameDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionAltnameData">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_ALTNAME_DATA-->
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_inst_code" jdbcType="INTEGER" property="cInstCode" />
+    <result column="c_inst_altname_type" jdbcType="INTEGER" property="cInstAltnameType" />
+    <result column="c_inst_altname_hz" jdbcType="CHAR" property="cInstAltnameHz" />
+    <result column="c_inst_altname_py" jdbcType="CHAR" property="cInstAltnamePy" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_name_code, c_inst_code, c_inst_altname_type, c_inst_altname_hz, c_inst_altname_py, 
+    c_source, c_pages, c_notes
+  </sql>
+</mapper>

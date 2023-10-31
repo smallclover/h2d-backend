@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.BiogAddrCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.BiogAddrCodes">
+    <!--@mbg.generated-->
+    <!--@Table BIOG_ADDR_CODES-->
+    <result column="c_addr_type" jdbcType="INTEGER" property="cAddrType" />
+    <result column="c_addr_desc" jdbcType="CHAR" property="cAddrDesc" />
+    <result column="c_addr_desc_chn" jdbcType="CHAR" property="cAddrDescChn" />
+    <result column="c_addr_note" jdbcType="CHAR" property="cAddrNote" />
+    <result column="c_index_addr_rank" jdbcType="INTEGER" property="cIndexAddrRank" />
+    <result column="c_index_addr_default_rank" jdbcType="INTEGER" property="cIndexAddrDefaultRank" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_addr_type, c_addr_desc, c_addr_desc_chn, c_addr_note, c_index_addr_rank, c_index_addr_default_rank
+  </sql>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TextBiblcatTypesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TextBiblcatTypes">
+    <!--@mbg.generated-->
+    <!--@Table TEXT_BIBLCAT_TYPES-->
+    <result column="c_text_cat_type_id" jdbcType="CHAR" property="cTextCatTypeId" />
+    <result column="c_text_cat_type_desc" jdbcType="CHAR" property="cTextCatTypeDesc" />
+    <result column="c_text_cat_type_desc_chn" jdbcType="CHAR" property="cTextCatTypeDescChn" />
+    <result column="c_text_cat_type_parent_id" jdbcType="CHAR" property="cTextCatTypeParentId" />
+    <result column="c_text_cat_type_level" jdbcType="INTEGER" property="cTextCatTypeLevel" />
+    <result column="c_text_cat_type_sortorder" jdbcType="INTEGER" property="cTextCatTypeSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_text_cat_type_id, c_text_cat_type_desc, c_text_cat_type_desc_chn, c_text_cat_type_parent_id, 
+    c_text_cat_type_level, c_text_cat_type_sortorder
+  </sql>
+</mapper>

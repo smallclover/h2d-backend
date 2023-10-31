@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.StatusCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.StatusCodes">
+    <!--@mbg.generated-->
+    <!--@Table STATUS_CODES-->
+    <result column="c_status_code" jdbcType="INTEGER" property="cStatusCode" />
+    <result column="c_status_desc" jdbcType="CHAR" property="cStatusDesc" />
+    <result column="c_status_desc_chn" jdbcType="CHAR" property="cStatusDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_status_code, c_status_desc, c_status_desc_chn
+  </sql>
+</mapper>

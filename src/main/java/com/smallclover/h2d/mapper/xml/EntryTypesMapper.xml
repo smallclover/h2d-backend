@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EntryTypesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EntryTypes">
+    <!--@mbg.generated-->
+    <!--@Table ENTRY_TYPES-->
+    <result column="c_entry_type" jdbcType="CHAR" property="cEntryType" />
+    <result column="c_entry_type_desc" jdbcType="CHAR" property="cEntryTypeDesc" />
+    <result column="c_entry_type_desc_chn" jdbcType="CHAR" property="cEntryTypeDescChn" />
+    <result column="c_entry_type_parent_id" jdbcType="CHAR" property="cEntryTypeParentId" />
+    <result column="c_entry_type_level" jdbcType="FLOAT" property="cEntryTypeLevel" />
+    <result column="c_entry_type_sortorder" jdbcType="FLOAT" property="cEntryTypeSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_entry_type, c_entry_type_desc, c_entry_type_desc_chn, c_entry_type_parent_id, c_entry_type_level, 
+    c_entry_type_sortorder
+  </sql>
+</mapper>

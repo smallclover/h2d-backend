@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.PossessionActCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.PossessionActCodes">
+    <!--@mbg.generated-->
+    <!--@Table POSSESSION_ACT_CODES-->
+    <result column="c_possession_act_code" jdbcType="INTEGER" property="cPossessionActCode" />
+    <result column="c_possession_act_desc" jdbcType="CHAR" property="cPossessionActDesc" />
+    <result column="c_possession_act_desc_chn" jdbcType="CHAR" property="cPossessionActDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_possession_act_code, c_possession_act_desc, c_possession_act_desc_chn
+  </sql>
+</mapper>

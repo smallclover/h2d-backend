@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.OccasionCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.OccasionCodes">
+    <!--@mbg.generated-->
+    <!--@Table OCCASION_CODES-->
+    <result column="c_occasion_code" jdbcType="INTEGER" property="cOccasionCode" />
+    <result column="c_occasion_desc" jdbcType="CHAR" property="cOccasionDesc" />
+    <result column="c_occasion_desc_chn" jdbcType="CHAR" property="cOccasionDescChn" />
+    <result column="c_sortorder" jdbcType="INTEGER" property="cSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_occasion_code, c_occasion_desc, c_occasion_desc_chn, c_sortorder
+  </sql>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.KinshipCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.KinshipCodes">
+    <!--@mbg.generated-->
+    <!--@Table KINSHIP_CODES-->
+    <result column="c_kincode" jdbcType="INTEGER" property="cKincode" />
+    <result column="c_kin_pair1" jdbcType="INTEGER" property="cKinPair1" />
+    <result column="c_kin_pair2" jdbcType="INTEGER" property="cKinPair2" />
+    <result column="c_kin_pair_notes" jdbcType="CHAR" property="cKinPairNotes" />
+    <result column="c_kinrel_chn" jdbcType="CHAR" property="cKinrelChn" />
+    <result column="c_kinrel" jdbcType="CHAR" property="cKinrel" />
+    <result column="c_kinrel_alt" jdbcType="CHAR" property="cKinrelAlt" />
+    <result column="c_pick_sorting" jdbcType="INTEGER" property="cPickSorting" />
+    <result column="c_upstep" jdbcType="INTEGER" property="cUpstep" />
+    <result column="c_dwnstep" jdbcType="INTEGER" property="cDwnstep" />
+    <result column="c_marstep" jdbcType="INTEGER" property="cMarstep" />
+    <result column="c_colstep" jdbcType="INTEGER" property="cColstep" />
+    <result column="c_kinrel_simplified" jdbcType="CHAR" property="cKinrelSimplified" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_kincode, c_kin_pair1, c_kin_pair2, c_kin_pair_notes, c_kinrel_chn, c_kinrel, c_kinrel_alt, 
+    c_pick_sorting, c_upstep, c_dwnstep, c_marstep, c_colstep, c_kinrel_simplified
+  </sql>
+</mapper>

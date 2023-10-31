@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EventsDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EventsData">
+    <!--@mbg.generated-->
+    <!--@Table EVENTS_DATA-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_sequence" jdbcType="INTEGER" property="cSequence" />
+    <result column="c_event_record_id" jdbcType="INTEGER" property="cEventRecordId" />
+    <result column="c_event_code" jdbcType="INTEGER" property="cEventCode" />
+    <result column="c_role" jdbcType="CHAR" property="cRole" />
+    <result column="c_year" jdbcType="INTEGER" property="cYear" />
+    <result column="c_nh_code" jdbcType="INTEGER" property="cNhCode" />
+    <result column="c_nh_year" jdbcType="INTEGER" property="cNhYear" />
+    <result column="c_yr_range" jdbcType="INTEGER" property="cYrRange" />
+    <result column="c_intercalary" jdbcType="BOOLEAN" property="cIntercalary" />
+    <result column="c_month" jdbcType="INTEGER" property="cMonth" />
+    <result column="c_day" jdbcType="INTEGER" property="cDay" />
+    <result column="c_day_ganzhi" jdbcType="INTEGER" property="cDayGanzhi" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_event" jdbcType="CHAR" property="cEvent" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_sequence, c_event_record_id, c_event_code, c_role, c_year, c_nh_code, 
+    c_nh_year, c_yr_range, c_intercalary, c_month, c_day, c_day_ganzhi, c_addr_id, c_source, 
+    c_pages, c_secondary_source_author, c_event, c_notes, tts_sysno, c_created_by, c_created_date, 
+    c_modified_by, c_modified_date
+  </sql>
+</mapper>

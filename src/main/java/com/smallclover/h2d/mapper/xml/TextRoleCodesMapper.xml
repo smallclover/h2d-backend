@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TextRoleCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TextRoleCodes">
+    <!--@mbg.generated-->
+    <!--@Table TEXT_ROLE_CODES-->
+    <result column="c_role_id" jdbcType="INTEGER" property="cRoleId" />
+    <result column="c_role_desc" jdbcType="CHAR" property="cRoleDesc" />
+    <result column="c_role_desc_chn" jdbcType="CHAR" property="cRoleDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_role_id, c_role_desc, c_role_desc_chn
+  </sql>
+</mapper>

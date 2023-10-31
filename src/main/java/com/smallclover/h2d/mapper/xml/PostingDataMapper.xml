@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.PostingDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.PostingData">
+    <!--@mbg.generated-->
+    <!--@Table POSTING_DATA-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_posting_id" jdbcType="INTEGER" property="cPostingId" />
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_posting_id_old" jdbcType="INTEGER" property="cPostingIdOld" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_posting_id, tts_sysno, c_posting_id_old
+  </sql>
+</mapper>

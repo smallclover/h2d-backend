@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.BiogAddrDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.BiogAddrData">
+    <!--@mbg.generated-->
+    <!--@Table BIOG_ADDR_DATA-->
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_addr_type" jdbcType="INTEGER" property="cAddrType" />
+    <result column="c_sequence" jdbcType="INTEGER" property="cSequence" />
+    <result column="c_firstyear" jdbcType="INTEGER" property="cFirstyear" />
+    <result column="c_lastyear" jdbcType="INTEGER" property="cLastyear" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_fy_nh_code" jdbcType="INTEGER" property="cFyNhCode" />
+    <result column="c_ly_nh_code" jdbcType="INTEGER" property="cLyNhCode" />
+    <result column="c_fy_nh_year" jdbcType="INTEGER" property="cFyNhYear" />
+    <result column="c_ly_nh_year" jdbcType="INTEGER" property="cLyNhYear" />
+    <result column="c_fy_range" jdbcType="INTEGER" property="cFyRange" />
+    <result column="c_ly_range" jdbcType="INTEGER" property="cLyRange" />
+    <result column="c_natal" jdbcType="INTEGER" property="cNatal" />
+    <result column="c_fy_intercalary" jdbcType="BOOLEAN" property="cFyIntercalary" />
+    <result column="c_ly_intercalary" jdbcType="BOOLEAN" property="cLyIntercalary" />
+    <result column="c_fy_month" jdbcType="INTEGER" property="cFyMonth" />
+    <result column="c_ly_month" jdbcType="INTEGER" property="cLyMonth" />
+    <result column="c_fy_day" jdbcType="INTEGER" property="cFyDay" />
+    <result column="c_ly_day" jdbcType="INTEGER" property="cLyDay" />
+    <result column="c_fy_day_gz" jdbcType="INTEGER" property="cFyDayGz" />
+    <result column="c_ly_day_gz" jdbcType="INTEGER" property="cLyDayGz" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+    <result column="c_delete" jdbcType="INTEGER" property="cDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tts_sysno, c_personid, c_addr_id, c_addr_type, c_sequence, c_firstyear, c_lastyear, 
+    c_source, c_pages, c_secondary_source_author, c_notes, c_fy_nh_code, c_ly_nh_code, 
+    c_fy_nh_year, c_ly_nh_year, c_fy_range, c_ly_range, c_natal, c_fy_intercalary, c_ly_intercalary, 
+    c_fy_month, c_ly_month, c_fy_day, c_ly_day, c_fy_day_gz, c_ly_day_gz, c_created_by, 
+    c_created_date, c_modified_by, c_modified_date, c_delete
+  </sql>
+</mapper>

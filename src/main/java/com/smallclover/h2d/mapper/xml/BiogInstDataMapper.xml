@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.BiogInstDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.BiogInstData">
+    <!--@mbg.generated-->
+    <!--@Table BIOG_INST_DATA-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_inst_code" jdbcType="INTEGER" property="cInstCode" />
+    <result column="c_bi_role_code" jdbcType="INTEGER" property="cBiRoleCode" />
+    <result column="c_bi_begin_year" jdbcType="INTEGER" property="cBiBeginYear" />
+    <result column="c_bi_by_nh_code" jdbcType="INTEGER" property="cBiByNhCode" />
+    <result column="c_bi_by_nh_year" jdbcType="INTEGER" property="cBiByNhYear" />
+    <result column="c_bi_by_range" jdbcType="INTEGER" property="cBiByRange" />
+    <result column="c_bi_end_year" jdbcType="INTEGER" property="cBiEndYear" />
+    <result column="c_bi_ey_nh_code" jdbcType="INTEGER" property="cBiEyNhCode" />
+    <result column="c_bi_ey_nh_year" jdbcType="INTEGER" property="cBiEyNhYear" />
+    <result column="c_bi_ey_range" jdbcType="INTEGER" property="cBiEyRange" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_inst_name_code, c_inst_code, c_bi_role_code, c_bi_begin_year, c_bi_by_nh_code, 
+    c_bi_by_nh_year, c_bi_by_range, c_bi_end_year, c_bi_ey_nh_code, c_bi_ey_nh_year, 
+    c_bi_ey_range, c_source, c_pages, c_secondary_source_author, c_notes, c_created_by, 
+    c_created_date, c_modified_by, c_modified_date, tts_sysno
+  </sql>
+</mapper>

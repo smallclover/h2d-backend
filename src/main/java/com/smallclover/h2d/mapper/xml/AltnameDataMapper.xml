@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AltnameDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AltnameData">
+    <!--@mbg.generated-->
+    <!--@Table ALTNAME_DATA-->
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_alt_name" jdbcType="CHAR" property="cAltName" />
+    <result column="c_alt_name_chn" jdbcType="CHAR" property="cAltNameChn" />
+    <result column="c_alt_name_type_code" jdbcType="INTEGER" property="cAltNameTypeCode" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tts_sysno, c_personid, c_alt_name, c_alt_name_chn, c_alt_name_type_code, c_source, 
+    c_pages, c_secondary_source_author, c_notes, c_created_by, c_created_date, c_modified_by, 
+    c_modified_date
+  </sql>
+
+  <select id="getAltNameByPersonIdAndType" resultMap="BaseResultMap">
+    SELECT * FROM ALTNAME_DATA WHERE c_personid = #{personId,jdbcType=INTEGER}
+                                 AND c_alt_name_type_code = #{codeType,jdbcType=INTEGER}
+  </select>
+</mapper>

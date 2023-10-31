@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SqliteMasterMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SqliteMaster">
+    <!--@mbg.generated-->
+    <!--@Table sqlite_master-->
+    <result column="type" jdbcType="LONGVARCHAR" property="type" />
+    <result column="name" jdbcType="LONGVARCHAR" property="name" />
+    <result column="tbl_name" jdbcType="LONGVARCHAR" property="tblName" />
+    <result column="rootpage" jdbcType="INTEGER" property="rootpage" />
+    <result column="sql" jdbcType="LONGVARCHAR" property="sql" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    "type", "name", tbl_name, rootpage, "sql"
+  </sql>
+</mapper>

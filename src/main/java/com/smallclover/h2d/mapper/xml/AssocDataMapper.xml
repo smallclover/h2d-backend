@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AssocDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AssocData">
+    <!--@mbg.generated-->
+    <!--@Table ASSOC_DATA-->
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_assoc_code" jdbcType="INTEGER" property="cAssocCode" />
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_kin_code" jdbcType="INTEGER" property="cKinCode" />
+    <result column="c_kin_id" jdbcType="INTEGER" property="cKinId" />
+    <result column="c_assoc_id" jdbcType="INTEGER" property="cAssocId" />
+    <result column="c_assoc_kin_code" jdbcType="INTEGER" property="cAssocKinCode" />
+    <result column="c_assoc_kin_id" jdbcType="INTEGER" property="cAssocKinId" />
+    <result column="c_tertiary_personid" jdbcType="INTEGER" property="cTertiaryPersonid" />
+    <result column="c_tertiary_type_notes" jdbcType="CHAR" property="cTertiaryTypeNotes" />
+    <result column="c_assoc_count" jdbcType="INTEGER" property="cAssocCount" />
+    <result column="c_sequence" jdbcType="INTEGER" property="cSequence" />
+    <result column="c_assoc_year" jdbcType="INTEGER" property="cAssocYear" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_assoc_nh_code" jdbcType="INTEGER" property="cAssocNhCode" />
+    <result column="c_assoc_nh_year" jdbcType="INTEGER" property="cAssocNhYear" />
+    <result column="c_assoc_range" jdbcType="INTEGER" property="cAssocRange" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_litgenre_code" jdbcType="INTEGER" property="cLitgenreCode" />
+    <result column="c_occasion_code" jdbcType="INTEGER" property="cOccasionCode" />
+    <result column="c_topic_code" jdbcType="INTEGER" property="cTopicCode" />
+    <result column="c_inst_code" jdbcType="INTEGER" property="cInstCode" />
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_text_title" jdbcType="CHAR" property="cTextTitle" />
+    <result column="c_assoc_claimer_id" jdbcType="INTEGER" property="cAssocClaimerId" />
+    <result column="c_assoc_intercalary" jdbcType="BOOLEAN" property="cAssocIntercalary" />
+    <result column="c_assoc_month" jdbcType="INTEGER" property="cAssocMonth" />
+    <result column="c_assoc_day" jdbcType="INTEGER" property="cAssocDay" />
+    <result column="c_assoc_day_gz" jdbcType="INTEGER" property="cAssocDayGz" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tts_sysno, c_assoc_code, c_personid, c_kin_code, c_kin_id, c_assoc_id, c_assoc_kin_code, 
+    c_assoc_kin_id, c_tertiary_personid, c_tertiary_type_notes, c_assoc_count, c_sequence, 
+    c_assoc_year, c_source, c_pages, c_secondary_source_author, c_notes, c_assoc_nh_code, 
+    c_assoc_nh_year, c_assoc_range, c_addr_id, c_litgenre_code, c_occasion_code, c_topic_code, 
+    c_inst_code, c_inst_name_code, c_text_title, c_assoc_claimer_id, c_assoc_intercalary, 
+    c_assoc_month, c_assoc_day, c_assoc_day_gz, c_created_by, c_created_date, c_modified_by, 
+    c_modified_date
+  </sql>
+
+  <resultMap id="RelationMap" type="com.smallclover.h2d.entity.other.Relation">
+    <result column="m_person_id" jdbcType="INTEGER" property="mPersonId" />
+    <result column="m_person_chn" jdbcType="VARCHAR" property="mPersonChn" />
+    <result column="s_person_id" jdbcType="INTEGER" property="sPersonId" />
+    <result column="s_person_chn" jdbcType="VARCHAR" property="sPersonChn" />
+    <result column="assoc_desc_chn" jdbcType="VARCHAR" property="assocDescChn" />
+    <result column="assoc_desc_type_chn" jdbcType="VARCHAR" property="assocTypeDescChn" />
+  </resultMap>
+  <select id="getRelationByPersonId" resultMap="RelationMap">
+    SELECT
+      bm.c_name_chn m_person_chn,
+      ad.c_personid m_person_id,
+      bm2.c_name_chn s_person_chn,
+      ad.c_assoc_id s_person_id,
+      ac.c_assoc_desc_chn assoc_desc_chn,
+      at2.c_assoc_type_desc_chn assoc_desc_type_chn
+    FROM ASSOC_DATA ad
+    LEFT JOIN BIOG_MAIN bm ON bm.c_personid = ad.c_personid
+    LEFT JOIN ASSOC_CODES ac ON ac.c_assoc_code = ad.c_assoc_code
+    LEFT JOIN ASSOC_CODE_TYPE_REL actr ON actr.c_assoc_code = ac.c_assoc_code
+    LEFT JOIN ASSOC_TYPES at2 ON at2.c_assoc_type_id = actr.c_assoc_type_id
+    LEFT JOIN BIOG_MAIN bm2 ON bm2.c_personid = ad.c_assoc_id
+    WHERE bm.c_personid = #{personId,jdbcType=INTEGER}
+      and ad.c_assoc_id = 3915
+    </select>
+</mapper>

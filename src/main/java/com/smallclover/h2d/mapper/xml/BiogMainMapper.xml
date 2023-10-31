@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.BiogMainMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.BiogMain">
+    <!--@mbg.generated-->
+    <!--@Table BIOG_MAIN-->
+    <result column="tts_sysno" jdbcType="INTEGER" property="ttsSysno" />
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_name" jdbcType="CHAR" property="cName" />
+    <result column="c_name_chn" jdbcType="CHAR" property="cNameChn" />
+    <result column="c_index_year" jdbcType="INTEGER" property="cIndexYear" />
+    <result column="c_index_year_type_code" jdbcType="CHAR" property="cIndexYearTypeCode" />
+    <result column="c_index_year_source_id" jdbcType="INTEGER" property="cIndexYearSourceId" />
+    <result column="c_female" jdbcType="BOOLEAN" property="cFemale" />
+    <result column="c_index_addr_id" jdbcType="INTEGER" property="cIndexAddrId" />
+    <result column="c_index_addr_type_code" jdbcType="INTEGER" property="cIndexAddrTypeCode" />
+    <result column="c_ethnicity_code" jdbcType="INTEGER" property="cEthnicityCode" />
+    <result column="c_household_status_code" jdbcType="INTEGER" property="cHouseholdStatusCode" />
+    <result column="c_tribe" jdbcType="CHAR" property="cTribe" />
+    <result column="c_birthyear" jdbcType="INTEGER" property="cBirthyear" />
+    <result column="c_by_nh_code" jdbcType="INTEGER" property="cByNhCode" />
+    <result column="c_by_nh_year" jdbcType="INTEGER" property="cByNhYear" />
+    <result column="c_by_range" jdbcType="INTEGER" property="cByRange" />
+    <result column="c_deathyear" jdbcType="INTEGER" property="cDeathyear" />
+    <result column="c_dy_nh_code" jdbcType="INTEGER" property="cDyNhCode" />
+    <result column="c_dy_nh_year" jdbcType="INTEGER" property="cDyNhYear" />
+    <result column="c_dy_range" jdbcType="INTEGER" property="cDyRange" />
+    <result column="c_death_age" jdbcType="INTEGER" property="cDeathAge" />
+    <result column="c_death_age_range" jdbcType="INTEGER" property="cDeathAgeRange" />
+    <result column="c_fl_earliest_year" jdbcType="INTEGER" property="cFlEarliestYear" />
+    <result column="c_fl_ey_nh_code" jdbcType="INTEGER" property="cFlEyNhCode" />
+    <result column="c_fl_ey_nh_year" jdbcType="INTEGER" property="cFlEyNhYear" />
+    <result column="c_fl_ey_notes" jdbcType="CHAR" property="cFlEyNotes" />
+    <result column="c_fl_latest_year" jdbcType="INTEGER" property="cFlLatestYear" />
+    <result column="c_fl_ly_nh_code" jdbcType="INTEGER" property="cFlLyNhCode" />
+    <result column="c_fl_ly_nh_year" jdbcType="INTEGER" property="cFlLyNhYear" />
+    <result column="c_fl_ly_notes" jdbcType="CHAR" property="cFlLyNotes" />
+    <result column="c_surname" jdbcType="CHAR" property="cSurname" />
+    <result column="c_surname_chn" jdbcType="CHAR" property="cSurnameChn" />
+    <result column="c_mingzi" jdbcType="CHAR" property="cMingzi" />
+    <result column="c_mingzi_chn" jdbcType="CHAR" property="cMingziChn" />
+    <result column="c_dy" jdbcType="INTEGER" property="cDy" />
+    <result column="c_choronym_code" jdbcType="INTEGER" property="cChoronymCode" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_by_intercalary" jdbcType="BOOLEAN" property="cByIntercalary" />
+    <result column="c_dy_intercalary" jdbcType="BOOLEAN" property="cDyIntercalary" />
+    <result column="c_by_month" jdbcType="INTEGER" property="cByMonth" />
+    <result column="c_dy_month" jdbcType="INTEGER" property="cDyMonth" />
+    <result column="c_by_day" jdbcType="INTEGER" property="cByDay" />
+    <result column="c_dy_day" jdbcType="INTEGER" property="cDyDay" />
+    <result column="c_by_day_gz" jdbcType="INTEGER" property="cByDayGz" />
+    <result column="c_dy_day_gz" jdbcType="INTEGER" property="cDyDayGz" />
+    <result column="c_surname_proper" jdbcType="CHAR" property="cSurnameProper" />
+    <result column="c_mingzi_proper" jdbcType="CHAR" property="cMingziProper" />
+    <result column="c_name_proper" jdbcType="CHAR" property="cNameProper" />
+    <result column="c_surname_rm" jdbcType="CHAR" property="cSurnameRm" />
+    <result column="c_mingzi_rm" jdbcType="CHAR" property="cMingziRm" />
+    <result column="c_name_rm" jdbcType="CHAR" property="cNameRm" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+    <result column="c_self_bio" jdbcType="BOOLEAN" property="cSelfBio" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tts_sysno, c_personid, c_name, c_name_chn, c_index_year, c_index_year_type_code, 
+    c_index_year_source_id, c_female, c_index_addr_id, c_index_addr_type_code, c_ethnicity_code, 
+    c_household_status_code, c_tribe, c_birthyear, c_by_nh_code, c_by_nh_year, c_by_range, 
+    c_deathyear, c_dy_nh_code, c_dy_nh_year, c_dy_range, c_death_age, c_death_age_range, 
+    c_fl_earliest_year, c_fl_ey_nh_code, c_fl_ey_nh_year, c_fl_ey_notes, c_fl_latest_year, 
+    c_fl_ly_nh_code, c_fl_ly_nh_year, c_fl_ly_notes, c_surname, c_surname_chn, c_mingzi, 
+    c_mingzi_chn, c_dy, c_choronym_code, c_notes, c_by_intercalary, c_dy_intercalary, 
+    c_by_month, c_dy_month, c_by_day, c_dy_day, c_by_day_gz, c_dy_day_gz, c_surname_proper, 
+    c_mingzi_proper, c_name_proper, c_surname_rm, c_mingzi_rm, c_name_rm, c_created_by, 
+    c_created_date, c_modified_by, c_modified_date, c_self_bio
+  </sql>
+
+
+  <select id="getBiogMainById" resultMap="BaseResultMap">
+    SELECT * FROM biog_main WHERE c_personid = #{cPersonId,jdbcType=INTEGER}
+  </select>
+
+  <select id="getBiogMainByName" resultMap="BaseResultMap">
+    SELECT * FROM BIOG_MAIN WHERE c_name LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+    OR c_name_chn LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+    OR c_surname LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+    OR c_surname_chn LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+    OR c_mingzi LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+    OR c_name_chn LIKE '%'||#{name,jdbcType=VARCHAR}||'%'
+  </select>
+</mapper>

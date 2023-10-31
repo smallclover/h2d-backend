@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.ExtantCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.ExtantCodes">
+    <!--@mbg.generated-->
+    <!--@Table EXTANT_CODES-->
+    <result column="c_extant_code" jdbcType="INTEGER" property="cExtantCode" />
+    <result column="c_extant_desc" jdbcType="CHAR" property="cExtantDesc" />
+    <result column="c_extant_desc_chn" jdbcType="CHAR" property="cExtantDescChn" />
+    <result column="c_extant_code_hd" jdbcType="CHAR" property="cExtantCodeHd" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_extant_code, c_extant_desc, c_extant_desc_chn, c_extant_code_hd
+  </sql>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.OfficeCategoriesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.OfficeCategories">
+    <!--@mbg.generated-->
+    <!--@Table OFFICE_CATEGORIES-->
+    <result column="c_office_category_id" jdbcType="INTEGER" property="cOfficeCategoryId" />
+    <result column="c_category_desc" jdbcType="CHAR" property="cCategoryDesc" />
+    <result column="c_category_desc_chn" jdbcType="CHAR" property="cCategoryDescChn" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_office_category_id, c_category_desc, c_category_desc_chn, c_notes
+  </sql>
+</mapper>

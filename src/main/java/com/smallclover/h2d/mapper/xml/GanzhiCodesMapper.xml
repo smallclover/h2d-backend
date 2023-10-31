@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.GanzhiCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.GanzhiCodes">
+    <!--@mbg.generated-->
+    <!--@Table GANZHI_CODES-->
+    <result column="c_ganzhi_code" jdbcType="INTEGER" property="cGanzhiCode" />
+    <result column="c_ganzhi_chn" jdbcType="CHAR" property="cGanzhiChn" />
+    <result column="c_ganzhi_py" jdbcType="CHAR" property="cGanzhiPy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_ganzhi_code, c_ganzhi_chn, c_ganzhi_py
+  </sql>
+</mapper>

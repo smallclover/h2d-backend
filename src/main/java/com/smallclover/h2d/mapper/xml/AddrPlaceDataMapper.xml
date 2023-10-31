@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AddrPlaceDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AddrPlaceData">
+    <!--@mbg.generated-->
+    <!--@Table ADDR_PLACE_DATA-->
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_place_id" jdbcType="INTEGER" property="cPlaceId" />
+    <result column="c_firstyear" jdbcType="INTEGER" property="cFirstyear" />
+    <result column="c_lastyear" jdbcType="INTEGER" property="cLastyear" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_addr_id, c_place_id, c_firstyear, c_lastyear
+  </sql>
+</mapper>

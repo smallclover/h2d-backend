@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionNameCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionNameCodes">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_NAME_CODES-->
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_inst_name_hz" jdbcType="CHAR" property="cInstNameHz" />
+    <result column="c_inst_name_py" jdbcType="CHAR" property="cInstNamePy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_name_code, c_inst_name_hz, c_inst_name_py
+  </sql>
+</mapper>

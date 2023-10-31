@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.YearRangeCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.YearRangeCodes">
+    <!--@mbg.generated-->
+    <!--@Table YEAR_RANGE_CODES-->
+    <result column="c_range_code" jdbcType="INTEGER" property="cRangeCode" />
+    <result column="c_range" jdbcType="CHAR" property="cRange" />
+    <result column="c_range_chn" jdbcType="CHAR" property="cRangeChn" />
+    <result column="c_approx" jdbcType="CHAR" property="cApprox" />
+    <result column="c_approx_chn" jdbcType="CHAR" property="cApproxChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_range_code, c_range, c_range_chn, c_approx, c_approx_chn
+  </sql>
+</mapper>

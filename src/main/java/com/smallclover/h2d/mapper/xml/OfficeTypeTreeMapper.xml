@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.OfficeTypeTreeMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.OfficeTypeTree">
+    <!--@mbg.generated-->
+    <!--@Table OFFICE_TYPE_TREE-->
+    <result column="c_office_type_node_id" jdbcType="CHAR" property="cOfficeTypeNodeId" />
+    <result column="c_tts_node_id" jdbcType="CHAR" property="cTtsNodeId" />
+    <result column="c_office_type_desc" jdbcType="CHAR" property="cOfficeTypeDesc" />
+    <result column="c_office_type_desc_chn" jdbcType="CHAR" property="cOfficeTypeDescChn" />
+    <result column="c_parent_id" jdbcType="CHAR" property="cParentId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_office_type_node_id, c_tts_node_id, c_office_type_desc, c_office_type_desc_chn, 
+    c_parent_id
+  </sql>
+</mapper>

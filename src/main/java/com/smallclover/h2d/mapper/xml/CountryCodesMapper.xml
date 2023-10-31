@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.CountryCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.CountryCodes">
+    <!--@mbg.generated-->
+    <!--@Table COUNTRY_CODES-->
+    <result column="c_country_code" jdbcType="INTEGER" property="cCountryCode" />
+    <result column="c_country_desc" jdbcType="CHAR" property="cCountryDesc" />
+    <result column="c_country_desc_chn" jdbcType="CHAR" property="cCountryDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_country_code, c_country_desc, c_country_desc_chn
+  </sql>
+</mapper>

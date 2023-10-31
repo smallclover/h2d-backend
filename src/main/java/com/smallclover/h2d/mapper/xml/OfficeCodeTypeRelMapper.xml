@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.OfficeCodeTypeRelMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.OfficeCodeTypeRel">
+    <!--@mbg.generated-->
+    <!--@Table OFFICE_CODE_TYPE_REL-->
+    <result column="c_office_id" jdbcType="INTEGER" property="cOfficeId" />
+    <result column="c_office_tree_id" jdbcType="CHAR" property="cOfficeTreeId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_office_id, c_office_tree_id
+  </sql>
+</mapper>

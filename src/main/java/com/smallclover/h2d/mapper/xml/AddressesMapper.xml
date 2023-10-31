@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AddressesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.Addresses">
+    <!--@mbg.generated-->
+    <!--@Table ADDRESSES-->
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_addr_cbd" jdbcType="CHAR" property="cAddrCbd" />
+    <result column="c_name" jdbcType="CHAR" property="cName" />
+    <result column="c_name_chn" jdbcType="CHAR" property="cNameChn" />
+    <result column="c_admin_type" jdbcType="CHAR" property="cAdminType" />
+    <result column="c_firstyear" jdbcType="INTEGER" property="cFirstyear" />
+    <result column="c_lastyear" jdbcType="INTEGER" property="cLastyear" />
+    <result column="x_coord" jdbcType="FLOAT" property="xCoord" />
+    <result column="y_coord" jdbcType="FLOAT" property="yCoord" />
+    <result column="belongs1_ID" jdbcType="INTEGER" property="belongs1Id" />
+    <result column="belongs1_Name" jdbcType="CHAR" property="belongs1Name" />
+    <result column="belongs2_ID" jdbcType="INTEGER" property="belongs2Id" />
+    <result column="belongs2_Name" jdbcType="CHAR" property="belongs2Name" />
+    <result column="belongs3_ID" jdbcType="INTEGER" property="belongs3Id" />
+    <result column="belongs3_Name" jdbcType="CHAR" property="belongs3Name" />
+    <result column="belongs4_ID" jdbcType="INTEGER" property="belongs4Id" />
+    <result column="belongs4_Name" jdbcType="CHAR" property="belongs4Name" />
+    <result column="belongs5_ID" jdbcType="INTEGER" property="belongs5Id" />
+    <result column="belongs5_Name" jdbcType="CHAR" property="belongs5Name" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_addr_id, c_addr_cbd, c_name, c_name_chn, c_admin_type, c_firstyear, c_lastyear, 
+    x_coord, y_coord, belongs1_ID, belongs1_Name, belongs2_ID, belongs2_Name, belongs3_ID, 
+    belongs3_Name, belongs4_ID, belongs4_Name, belongs5_ID, belongs5_Name
+  </sql>
+</mapper>

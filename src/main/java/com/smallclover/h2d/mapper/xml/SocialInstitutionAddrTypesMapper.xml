@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionAddrTypesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionAddrTypes">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_ADDR_TYPES-->
+    <result column="c_inst_addr_type_code" jdbcType="INTEGER" property="cInstAddrTypeCode" />
+    <result column="c_inst_addr_type_desc" jdbcType="CHAR" property="cInstAddrTypeDesc" />
+    <result column="c_inst_addr_type_chn" jdbcType="CHAR" property="cInstAddrTypeChn" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_addr_type_code, c_inst_addr_type_desc, c_inst_addr_type_chn, c_notes
+  </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.ForeignKeysMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.ForeignKeys">
+    <!--@mbg.generated-->
+    <!--@Table ForeignKeys-->
+    <result column="AccessTblNm" jdbcType="CHAR" property="accesstblnm" />
+    <result column="AccessFldNm" jdbcType="CHAR" property="accessfldnm" />
+    <result column="ForeignKey" jdbcType="CHAR" property="foreignkey" />
+    <result column="ForeignKeyBaseField" jdbcType="CHAR" property="foreignkeybasefield" />
+    <result column="FKString" jdbcType="CHAR" property="fkstring" />
+    <result column="FKName" jdbcType="CHAR" property="fkname" />
+    <result column="skip" jdbcType="INTEGER" property="skip" />
+    <result column="IndexOnField" jdbcType="CHAR" property="indexonfield" />
+    <result column="DataFormat" jdbcType="CHAR" property="dataformat" />
+    <result column="NULL_allowed" jdbcType="BOOLEAN" property="nullAllowed" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    AccessTblNm, AccessFldNm, ForeignKey, ForeignKeyBaseField, FKString, FKName, skip, 
+    IndexOnField, DataFormat, NULL_allowed
+  </sql>
+</mapper>

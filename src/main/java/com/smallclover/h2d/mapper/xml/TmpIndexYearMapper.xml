@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TmpIndexYearMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TmpIndexYear">
+    <!--@mbg.generated-->
+    <!--@Table TMP_INDEX_YEAR-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_index_year" jdbcType="INTEGER" property="cIndexYear" />
+    <result column="c_index_year_source_id" jdbcType="INTEGER" property="cIndexYearSourceId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_index_year, c_index_year_source_id
+  </sql>
+</mapper>

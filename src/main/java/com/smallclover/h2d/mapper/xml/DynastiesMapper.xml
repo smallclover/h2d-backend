@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.DynastiesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.Dynasties">
+    <!--@mbg.generated-->
+    <!--@Table DYNASTIES-->
+    <result column="c_dy" jdbcType="INTEGER" property="cDy" />
+    <result column="c_dynasty" jdbcType="CHAR" property="cDynasty" />
+    <result column="c_dynasty_chn" jdbcType="CHAR" property="cDynastyChn" />
+    <result column="c_start" jdbcType="INTEGER" property="cStart" />
+    <result column="c_end" jdbcType="INTEGER" property="cEnd" />
+    <result column="c_sort" jdbcType="INTEGER" property="cSort" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_dy, c_dynasty, c_dynasty_chn, c_start, c_end, c_sort
+  </sql>
+</mapper>

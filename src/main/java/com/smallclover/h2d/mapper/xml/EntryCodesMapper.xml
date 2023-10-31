@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EntryCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EntryCodes">
+    <!--@mbg.generated-->
+    <!--@Table ENTRY_CODES-->
+    <result column="c_entry_code" jdbcType="INTEGER" property="cEntryCode" />
+    <result column="c_entry_desc" jdbcType="CHAR" property="cEntryDesc" />
+    <result column="c_entry_desc_chn" jdbcType="CHAR" property="cEntryDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_entry_code, c_entry_desc, c_entry_desc_chn
+  </sql>
+</mapper>

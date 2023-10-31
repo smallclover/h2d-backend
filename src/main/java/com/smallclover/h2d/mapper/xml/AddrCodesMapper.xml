@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AddrCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AddrCodes">
+    <!--@mbg.generated-->
+    <!--@Table ADDR_CODES-->
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_name" jdbcType="CHAR" property="cName" />
+    <result column="c_name_chn" jdbcType="CHAR" property="cNameChn" />
+    <result column="c_firstyear" jdbcType="INTEGER" property="cFirstyear" />
+    <result column="c_lastyear" jdbcType="INTEGER" property="cLastyear" />
+    <result column="c_admin_type" jdbcType="CHAR" property="cAdminType" />
+    <result column="x_coord" jdbcType="FLOAT" property="xCoord" />
+    <result column="y_coord" jdbcType="FLOAT" property="yCoord" />
+    <result column="CHGIS_PT_ID" jdbcType="INTEGER" property="chgisPtId" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_alt_names" jdbcType="CHAR" property="cAltNames" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_addr_id, c_name, c_name_chn, c_firstyear, c_lastyear, c_admin_type, x_coord, y_coord, 
+    CHGIS_PT_ID, c_notes, c_alt_names
+  </sql>
+</mapper>

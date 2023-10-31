@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.PlaceCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.PlaceCodes">
+    <!--@mbg.generated-->
+    <!--@Table PLACE_CODES-->
+    <result column="c_place_id" jdbcType="FLOAT" property="cPlaceId" />
+    <result column="c_place_1990" jdbcType="CHAR" property="cPlace1990" />
+    <result column="c_name" jdbcType="CHAR" property="cName" />
+    <result column="c_name_chn" jdbcType="CHAR" property="cNameChn" />
+    <result column="x_coord" jdbcType="FLOAT" property="xCoord" />
+    <result column="y_coord" jdbcType="FLOAT" property="yCoord" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_place_id, c_place_1990, c_name, c_name_chn, x_coord, y_coord
+  </sql>
+</mapper>

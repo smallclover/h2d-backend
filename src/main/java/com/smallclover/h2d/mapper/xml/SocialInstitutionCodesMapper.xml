@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionCodes">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_CODES-->
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_inst_code" jdbcType="INTEGER" property="cInstCode" />
+    <result column="c_inst_type_code" jdbcType="INTEGER" property="cInstTypeCode" />
+    <result column="c_inst_begin_year" jdbcType="INTEGER" property="cInstBeginYear" />
+    <result column="c_by_nianhao_code" jdbcType="INTEGER" property="cByNianhaoCode" />
+    <result column="c_by_nianhao_year" jdbcType="INTEGER" property="cByNianhaoYear" />
+    <result column="c_by_year_range" jdbcType="INTEGER" property="cByYearRange" />
+    <result column="c_inst_begin_dy" jdbcType="INTEGER" property="cInstBeginDy" />
+    <result column="c_inst_floruit_dy" jdbcType="INTEGER" property="cInstFloruitDy" />
+    <result column="c_inst_first_known_year" jdbcType="INTEGER" property="cInstFirstKnownYear" />
+    <result column="c_inst_end_year" jdbcType="INTEGER" property="cInstEndYear" />
+    <result column="c_ey_nianhao_code" jdbcType="INTEGER" property="cEyNianhaoCode" />
+    <result column="c_ey_nianhao_year" jdbcType="INTEGER" property="cEyNianhaoYear" />
+    <result column="c_ey_year_range" jdbcType="INTEGER" property="cEyYearRange" />
+    <result column="c_inst_end_dy" jdbcType="INTEGER" property="cInstEndDy" />
+    <result column="c_inst_last_known_year" jdbcType="INTEGER" property="cInstLastKnownYear" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_name_code, c_inst_code, c_inst_type_code, c_inst_begin_year, c_by_nianhao_code, 
+    c_by_nianhao_year, c_by_year_range, c_inst_begin_dy, c_inst_floruit_dy, c_inst_first_known_year, 
+    c_inst_end_year, c_ey_nianhao_code, c_ey_nianhao_year, c_ey_year_range, c_inst_end_dy, 
+    c_inst_last_known_year, c_source, c_pages, c_notes, c_secondary_source_author
+  </sql>
+</mapper>

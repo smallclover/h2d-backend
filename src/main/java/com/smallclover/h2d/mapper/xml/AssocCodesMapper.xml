@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AssocCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AssocCodes">
+    <!--@mbg.generated-->
+    <!--@Table ASSOC_CODES-->
+    <result column="c_assoc_code" jdbcType="INTEGER" property="cAssocCode" />
+    <result column="c_assoc_pair" jdbcType="INTEGER" property="cAssocPair" />
+    <result column="c_assoc_pair2" jdbcType="INTEGER" property="cAssocPair2" />
+    <result column="c_assoc_desc" jdbcType="CHAR" property="cAssocDesc" />
+    <result column="c_assoc_desc_chn" jdbcType="CHAR" property="cAssocDescChn" />
+    <result column="c_assoc_role_type" jdbcType="CHAR" property="cAssocRoleType" />
+    <result column="c_sortorder" jdbcType="INTEGER" property="cSortorder" />
+    <result column="c_example" jdbcType="CHAR" property="cExample" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_assoc_code, c_assoc_pair, c_assoc_pair2, c_assoc_desc, c_assoc_desc_chn, c_assoc_role_type, 
+    c_sortorder, c_example
+  </sql>
+</mapper>

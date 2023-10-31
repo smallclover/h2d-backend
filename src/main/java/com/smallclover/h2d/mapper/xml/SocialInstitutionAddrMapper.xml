@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionAddrMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionAddr">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_ADDR-->
+    <result column="c_inst_name_code" jdbcType="INTEGER" property="cInstNameCode" />
+    <result column="c_inst_code" jdbcType="INTEGER" property="cInstCode" />
+    <result column="c_inst_addr_type_code" jdbcType="INTEGER" property="cInstAddrTypeCode" />
+    <result column="c_inst_addr_begin_year" jdbcType="INTEGER" property="cInstAddrBeginYear" />
+    <result column="c_inst_addr_end_year" jdbcType="INTEGER" property="cInstAddrEndYear" />
+    <result column="c_inst_addr_id" jdbcType="INTEGER" property="cInstAddrId" />
+    <result column="inst_xcoord" jdbcType="FLOAT" property="instXcoord" />
+    <result column="inst_ycoord" jdbcType="FLOAT" property="instYcoord" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_name_code, c_inst_code, c_inst_addr_type_code, c_inst_addr_begin_year, c_inst_addr_end_year, 
+    c_inst_addr_id, inst_xcoord, inst_ycoord, c_source, c_pages, c_notes, c_secondary_source_author
+  </sql>
+</mapper>

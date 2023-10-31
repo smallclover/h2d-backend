@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TablesFieldsChangesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TablesFieldsChanges">
+    <!--@mbg.generated-->
+    <!--@Table TablesFieldsChanges-->
+    <result column="TableName" jdbcType="CHAR" property="tablename" />
+    <result column="FieldName" jdbcType="CHAR" property="fieldname" />
+    <result column="Change" jdbcType="CHAR" property="change" />
+    <result column="ChangeDate" jdbcType="CHAR" property="changedate" />
+    <result column="ChangeNotes" jdbcType="CHAR" property="changenotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    TableName, FieldName, "Change", ChangeDate, ChangeNotes
+  </sql>
+</mapper>

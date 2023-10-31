@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:D:\IdeaProjects\H2D\src\main\resources\latest.db
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+#      lettuce:
+#        pool:
+#          enabled: true
+#          # 连接池中的最小空闲连接
+#          min-idle: 0
+#          # 连接池中的最大空闲连接
+#          max-idle: 8
+#          # 连接池的最大的能分配的连接数
+#          max-active: 8
+#          # #连接池最大阻塞等待时间（使用负值表示没有限制）
+#          max-wait: -1ms
+server:
+  port: 8989
+
+mybatis-plus:
+  mapper-locations: classpath*:com/smallclover/h2d/mapper/xml/*Mapper.xml
+  type-aliases-package: com.smallclover.h2d.mapper
+#springdoc:
+#  api-docs:
+#    enabled: true
+#  swagger-ui:
+#    path: /docApi
+# springdoc-openapi项目配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.smallclover.h2d
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

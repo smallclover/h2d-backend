@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.SocialInstitutionAltnameCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.SocialInstitutionAltnameCodes">
+    <!--@mbg.generated-->
+    <!--@Table SOCIAL_INSTITUTION_ALTNAME_CODES-->
+    <result column="c_inst_altname_type" jdbcType="INTEGER" property="cInstAltnameType" />
+    <result column="c_inst_altname_desc" jdbcType="CHAR" property="cInstAltnameDesc" />
+    <result column="c_inst_altname_chn" jdbcType="CHAR" property="cInstAltnameChn" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_inst_altname_type, c_inst_altname_desc, c_inst_altname_chn, c_notes
+  </sql>
+</mapper>

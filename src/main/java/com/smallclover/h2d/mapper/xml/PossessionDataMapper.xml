@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.PossessionDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.PossessionData">
+    <!--@mbg.generated-->
+    <!--@Table POSSESSION_DATA-->
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_possession_record_id" jdbcType="INTEGER" property="cPossessionRecordId" />
+    <result column="c_sequence" jdbcType="INTEGER" property="cSequence" />
+    <result column="c_possession_act_code" jdbcType="INTEGER" property="cPossessionActCode" />
+    <result column="c_possession_desc" jdbcType="CHAR" property="cPossessionDesc" />
+    <result column="c_possession_desc_chn" jdbcType="CHAR" property="cPossessionDescChn" />
+    <result column="c_quantity" jdbcType="CHAR" property="cQuantity" />
+    <result column="c_measure_code" jdbcType="INTEGER" property="cMeasureCode" />
+    <result column="c_possession_yr" jdbcType="INTEGER" property="cPossessionYr" />
+    <result column="c_possession_nh_code" jdbcType="INTEGER" property="cPossessionNhCode" />
+    <result column="c_possession_nh_yr" jdbcType="INTEGER" property="cPossessionNhYr" />
+    <result column="c_possession_yr_range" jdbcType="INTEGER" property="cPossessionYrRange" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="c_created_by" jdbcType="CHAR" property="cCreatedBy" />
+    <result column="c_created_date" jdbcType="CHAR" property="cCreatedDate" />
+    <result column="c_modified_by" jdbcType="CHAR" property="cModifiedBy" />
+    <result column="c_modified_date" jdbcType="CHAR" property="cModifiedDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_personid, c_possession_record_id, c_sequence, c_possession_act_code, c_possession_desc, 
+    c_possession_desc_chn, c_quantity, c_measure_code, c_possession_yr, c_possession_nh_code, 
+    c_possession_nh_yr, c_possession_yr_range, c_addr_id, c_source, c_pages, c_secondary_source_author, 
+    c_notes, c_created_by, c_created_date, c_modified_by, c_modified_date
+  </sql>
+</mapper>

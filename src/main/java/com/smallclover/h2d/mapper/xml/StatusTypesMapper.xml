@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.StatusTypesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.StatusTypes">
+    <!--@mbg.generated-->
+    <!--@Table STATUS_TYPES-->
+    <result column="c_status_type_code" jdbcType="CHAR" property="cStatusTypeCode" />
+    <result column="c_status_type_desc" jdbcType="CHAR" property="cStatusTypeDesc" />
+    <result column="c_status_type_chn" jdbcType="CHAR" property="cStatusTypeChn" />
+    <result column="c_status_type_parent_code" jdbcType="CHAR" property="cStatusTypeParentCode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_status_type_code, c_status_type_desc, c_status_type_chn, c_status_type_parent_code
+  </sql>
+</mapper>

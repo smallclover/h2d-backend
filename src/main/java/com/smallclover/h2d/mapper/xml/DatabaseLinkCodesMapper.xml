@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.DatabaseLinkCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.DatabaseLinkCodes">
+    <!--@mbg.generated-->
+    <!--@Table DATABASE_LINK_CODES-->
+    <result column="c_db_id" jdbcType="INTEGER" property="cDbId" />
+    <result column="c_db_URL" jdbcType="CHAR" property="cDbUrl" />
+    <result column="c_db_name" jdbcType="CHAR" property="cDbName" />
+    <result column="c_db_name_trans_chn" jdbcType="CHAR" property="cDbNameTransChn" />
+    <result column="c_db_name_trans_eng" jdbcType="CHAR" property="cDbNameTransEng" />
+    <result column="c_db_institution" jdbcType="CHAR" property="cDbInstitution" />
+    <result column="c_db_institution_trans_chn" jdbcType="CHAR" property="cDbInstitutionTransChn" />
+    <result column="c_db_institution_trans_eng" jdbcType="CHAR" property="cDbInstitutionTransEng" />
+    <result column="c_db_date_of_origin" jdbcType="CHAR" property="cDbDateOfOrigin" />
+    <result column="c_db_contact person" jdbcType="CHAR" property="cDbContactPerson" />
+    <result column="c_DB_URL_FIRST_STRING" jdbcType="CHAR" property="cDbUrlFirstString" />
+    <result column="c_DB_URL_SECOND_STRING" jdbcType="CHAR" property="cDbUrlSecondString" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_db_id, c_db_URL, c_db_name, c_db_name_trans_chn, c_db_name_trans_eng, c_db_institution, 
+    c_db_institution_trans_chn, c_db_institution_trans_eng, c_db_date_of_origin, "c_db_contact person", 
+    c_DB_URL_FIRST_STRING, c_DB_URL_SECOND_STRING, c_notes
+  </sql>
+</mapper>

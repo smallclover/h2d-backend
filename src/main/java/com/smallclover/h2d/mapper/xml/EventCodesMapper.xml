@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EventCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EventCodes">
+    <!--@mbg.generated-->
+    <!--@Table EVENT_CODES-->
+    <result column="c_event_code" jdbcType="INTEGER" property="cEventCode" />
+    <result column="c_event_name_chn" jdbcType="CHAR" property="cEventNameChn" />
+    <result column="c_event_name" jdbcType="CHAR" property="cEventName" />
+    <result column="c_fy_yr" jdbcType="INTEGER" property="cFyYr" />
+    <result column="c_ly_yr" jdbcType="INTEGER" property="cLyYr" />
+    <result column="c_fy_nh_code" jdbcType="INTEGER" property="cFyNhCode" />
+    <result column="c_ly_nh_code" jdbcType="INTEGER" property="cLyNhCode" />
+    <result column="c_fy_nh_yr" jdbcType="INTEGER" property="cFyNhYr" />
+    <result column="c_ly_nh_yr" jdbcType="INTEGER" property="cLyNhYr" />
+    <result column="c_fy_intercalary" jdbcType="BOOLEAN" property="cFyIntercalary" />
+    <result column="c_fy_month" jdbcType="INTEGER" property="cFyMonth" />
+    <result column="c_ly_intercalary" jdbcType="BOOLEAN" property="cLyIntercalary" />
+    <result column="c_ly_month" jdbcType="INTEGER" property="cLyMonth" />
+    <result column="c_fy_range" jdbcType="INTEGER" property="cFyRange" />
+    <result column="c_ly_range" jdbcType="INTEGER" property="cLyRange" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_dy" jdbcType="INTEGER" property="cDy" />
+    <result column="c_source" jdbcType="INTEGER" property="cSource" />
+    <result column="c_pages" jdbcType="CHAR" property="cPages" />
+    <result column="c_event_notes" jdbcType="CHAR" property="cEventNotes" />
+    <result column="c_secondary_source_author" jdbcType="CHAR" property="cSecondarySourceAuthor" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_event_code, c_event_name_chn, c_event_name, c_fy_yr, c_ly_yr, c_fy_nh_code, c_ly_nh_code, 
+    c_fy_nh_yr, c_ly_nh_yr, c_fy_intercalary, c_fy_month, c_ly_intercalary, c_ly_month, 
+    c_fy_range, c_ly_range, c_addr_id, c_dy, c_source, c_pages, c_event_notes, c_secondary_source_author
+  </sql>
+</mapper>

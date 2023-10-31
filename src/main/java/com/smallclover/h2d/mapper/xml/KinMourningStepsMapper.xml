@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.KinMourningStepsMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.KinMourningSteps">
+    <!--@mbg.generated-->
+    <!--@Table KIN_MOURNING_STEPS-->
+    <result column="c_kinrel" jdbcType="CHAR" property="cKinrel" />
+    <result column="c_upstep" jdbcType="INTEGER" property="cUpstep" />
+    <result column="c_dwnstep" jdbcType="INTEGER" property="cDwnstep" />
+    <result column="c_marstep" jdbcType="INTEGER" property="cMarstep" />
+    <result column="c_colstep" jdbcType="INTEGER" property="cColstep" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_kinrel, c_upstep, c_dwnstep, c_marstep, c_colstep
+  </sql>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.FormLabelsMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.FormLabels">
+    <!--@mbg.generated-->
+    <!--@Table FormLabels-->
+    <result column="c_form" jdbcType="CHAR" property="cForm" />
+    <result column="c_label_id" jdbcType="INTEGER" property="cLabelId" />
+    <result column="c_english" jdbcType="CHAR" property="cEnglish" />
+    <result column="c_jianti" jdbcType="CHAR" property="cJianti" />
+    <result column="c_fanti" jdbcType="CHAR" property="cFanti" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_form, c_label_id, c_english, c_jianti, c_fanti
+  </sql>
+</mapper>

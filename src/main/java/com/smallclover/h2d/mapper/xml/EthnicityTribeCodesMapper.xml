@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EthnicityTribeCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EthnicityTribeCodes">
+    <!--@mbg.generated-->
+    <!--@Table ETHNICITY_TRIBE_CODES-->
+    <result column="c_ethnicity_code" jdbcType="INTEGER" property="cEthnicityCode" />
+    <result column="c_group_code" jdbcType="INTEGER" property="cGroupCode" />
+    <result column="c_subgroup_code" jdbcType="INTEGER" property="cSubgroupCode" />
+    <result column="c_altname_code" jdbcType="INTEGER" property="cAltnameCode" />
+    <result column="c_name_chn" jdbcType="CHAR" property="cNameChn" />
+    <result column="c_name" jdbcType="CHAR" property="cName" />
+    <result column="c_ethno_legal_cat" jdbcType="CHAR" property="cEthnoLegalCat" />
+    <result column="c_romanized" jdbcType="CHAR" property="cRomanized" />
+    <result column="c_surname" jdbcType="CHAR" property="cSurname" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+    <result column="JiuTangShu" jdbcType="CHAR" property="jiutangshu" />
+    <result column="XinTangShu" jdbcType="CHAR" property="xintangshu" />
+    <result column="JiuWudaiShi" jdbcType="CHAR" property="jiuwudaishi" />
+    <result column="XinWudaiShi" jdbcType="CHAR" property="xinwudaishi" />
+    <result column="SongShi" jdbcType="CHAR" property="songshi" />
+    <result column="LiaoShi" jdbcType="CHAR" property="liaoshi" />
+    <result column="JinShi" jdbcType="CHAR" property="jinshi" />
+    <result column="YuanShi" jdbcType="CHAR" property="yuanshi" />
+    <result column="MingShi" jdbcType="CHAR" property="mingshi" />
+    <result column="QingShiGao" jdbcType="CHAR" property="qingshigao" />
+    <result column="c_sortorder" jdbcType="INTEGER" property="cSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_ethnicity_code, c_group_code, c_subgroup_code, c_altname_code, c_name_chn, c_name, 
+    c_ethno_legal_cat, c_romanized, c_surname, c_notes, JiuTangShu, XinTangShu, JiuWudaiShi, 
+    XinWudaiShi, SongShi, LiaoShi, JinShi, YuanShi, MingShi, QingShiGao, c_sortorder
+  </sql>
+</mapper>

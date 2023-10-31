@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TablesFieldsMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TablesFields">
+    <!--@mbg.generated-->
+    <!--@Table TablesFields-->
+    <result column="RowNum" jdbcType="INTEGER" property="rownum" />
+    <result column="DumpTblNm" jdbcType="CHAR" property="dumptblnm" />
+    <result column="DumpFldNm" jdbcType="CHAR" property="dumpfldnm" />
+    <result column="AccessTblNm" jdbcType="CHAR" property="accesstblnm" />
+    <result column="AccessFldNm" jdbcType="CHAR" property="accessfldnm" />
+    <result column="IndexOnField" jdbcType="CHAR" property="indexonfield" />
+    <result column="DataFormat" jdbcType="CHAR" property="dataformat" />
+    <result column="NULL_allowed" jdbcType="BOOLEAN" property="nullAllowed" />
+    <result column="ForeignKey" jdbcType="CHAR" property="foreignkey" />
+    <result column="ForeignKeyBaseField" jdbcType="CHAR" property="foreignkeybasefield" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    "RowNum", DumpTblNm, DumpFldNm, AccessTblNm, AccessFldNm, IndexOnField, DataFormat, 
+    NULL_allowed, ForeignKey, ForeignKeyBaseField
+  </sql>
+</mapper>

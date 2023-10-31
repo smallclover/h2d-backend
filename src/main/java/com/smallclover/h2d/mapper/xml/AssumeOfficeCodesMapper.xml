@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AssumeOfficeCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AssumeOfficeCodes">
+    <!--@mbg.generated-->
+    <!--@Table ASSUME_OFFICE_CODES-->
+    <result column="c_assume_office_code" jdbcType="INTEGER" property="cAssumeOfficeCode" />
+    <result column="c_assume_office_desc_chn" jdbcType="CHAR" property="cAssumeOfficeDescChn" />
+    <result column="c_assume_office_desc" jdbcType="CHAR" property="cAssumeOfficeDesc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_assume_office_code, c_assume_office_desc_chn, c_assume_office_desc
+  </sql>
+</mapper>

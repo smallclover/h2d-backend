@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.EventsAddrMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.EventsAddr">
+    <!--@mbg.generated-->
+    <!--@Table EVENTS_ADDR-->
+    <result column="c_event_record_id" jdbcType="INTEGER" property="cEventRecordId" />
+    <result column="c_personid" jdbcType="INTEGER" property="cPersonid" />
+    <result column="c_addr_id" jdbcType="INTEGER" property="cAddrId" />
+    <result column="c_year" jdbcType="INTEGER" property="cYear" />
+    <result column="c_nh_code" jdbcType="INTEGER" property="cNhCode" />
+    <result column="c_nh_year" jdbcType="INTEGER" property="cNhYear" />
+    <result column="c_yr_range" jdbcType="INTEGER" property="cYrRange" />
+    <result column="c_intercalary" jdbcType="BOOLEAN" property="cIntercalary" />
+    <result column="c_month" jdbcType="INTEGER" property="cMonth" />
+    <result column="c_day" jdbcType="INTEGER" property="cDay" />
+    <result column="c_day_ganzhi" jdbcType="INTEGER" property="cDayGanzhi" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_event_record_id, c_personid, c_addr_id, c_year, c_nh_code, c_nh_year, c_yr_range, 
+    c_intercalary, c_month, c_day, c_day_ganzhi
+  </sql>
+</mapper>

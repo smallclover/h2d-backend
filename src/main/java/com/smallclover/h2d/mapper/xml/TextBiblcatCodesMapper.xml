@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.TextBiblcatCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.TextBiblcatCodes">
+    <!--@mbg.generated-->
+    <!--@Table TEXT_BIBLCAT_CODES-->
+    <result column="c_text_cat_code" jdbcType="INTEGER" property="cTextCatCode" />
+    <result column="c_text_cat_desc" jdbcType="CHAR" property="cTextCatDesc" />
+    <result column="c_text_cat_desc_chn" jdbcType="CHAR" property="cTextCatDescChn" />
+    <result column="c_text_cat_pinyin" jdbcType="CHAR" property="cTextCatPinyin" />
+    <result column="c_text_cat_parent_id" jdbcType="CHAR" property="cTextCatParentId" />
+    <result column="c_text_cat_level" jdbcType="CHAR" property="cTextCatLevel" />
+    <result column="c_text_cat_sortorder" jdbcType="INTEGER" property="cTextCatSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_text_cat_code, c_text_cat_desc, c_text_cat_desc_chn, c_text_cat_pinyin, c_text_cat_parent_id, 
+    c_text_cat_level, c_text_cat_sortorder
+  </sql>
+</mapper>

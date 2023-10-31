@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AssocTypesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AssocTypes">
+    <!--@mbg.generated-->
+    <!--@Table ASSOC_TYPES-->
+    <result column="c_assoc_type_id" jdbcType="CHAR" property="cAssocTypeId" />
+    <result column="c_assoc_type_desc" jdbcType="CHAR" property="cAssocTypeDesc" />
+    <result column="c_assoc_type_desc_chn" jdbcType="CHAR" property="cAssocTypeDescChn" />
+    <result column="c_assoc_type_parent_id" jdbcType="CHAR" property="cAssocTypeParentId" />
+    <result column="c_assoc_type_level" jdbcType="INTEGER" property="cAssocTypeLevel" />
+    <result column="c_assoc_type_sortorder" jdbcType="INTEGER" property="cAssocTypeSortorder" />
+    <result column="c_assoc_type_short_desc" jdbcType="CHAR" property="cAssocTypeShortDesc" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_assoc_type_id, c_assoc_type_desc, c_assoc_type_desc_chn, c_assoc_type_parent_id, 
+    c_assoc_type_level, c_assoc_type_sortorder, c_assoc_type_short_desc
+  </sql>
+</mapper>

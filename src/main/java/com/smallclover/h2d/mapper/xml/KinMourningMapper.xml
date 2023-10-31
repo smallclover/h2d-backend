@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.KinMourningMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.KinMourning">
+    <!--@mbg.generated-->
+    <!--@Table KIN_Mourning-->
+    <result column="c_kinrel" jdbcType="CHAR" property="cKinrel" />
+    <result column="c_kinrel_alt" jdbcType="CHAR" property="cKinrelAlt" />
+    <result column="c_kinrel_chn" jdbcType="CHAR" property="cKinrelChn" />
+    <result column="c_mourning" jdbcType="CHAR" property="cMourning" />
+    <result column="c_mourning_chn" jdbcType="CHAR" property="cMourningChn" />
+    <result column="c_kindist" jdbcType="CHAR" property="cKindist" />
+    <result column="c_kintype" jdbcType="CHAR" property="cKintype" />
+    <result column="c_kintype_desc" jdbcType="CHAR" property="cKintypeDesc" />
+    <result column="c_kintype_desc_chn" jdbcType="CHAR" property="cKintypeDescChn" />
+    <result column="c_notes" jdbcType="CHAR" property="cNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_kinrel, c_kinrel_alt, c_kinrel_chn, c_mourning, c_mourning_chn, c_kindist, c_kintype, 
+    c_kintype_desc, c_kintype_desc_chn, c_notes
+  </sql>
+</mapper>

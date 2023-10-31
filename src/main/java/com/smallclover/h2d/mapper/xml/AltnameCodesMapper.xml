@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.AltnameCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.AltnameCodes">
+    <!--@mbg.generated-->
+    <!--@Table ALTNAME_CODES-->
+    <result column="c_name_type_code" jdbcType="INTEGER" property="cNameTypeCode" />
+    <result column="c_name_type_desc" jdbcType="CHAR" property="cNameTypeDesc" />
+    <result column="c_name_type_desc_chn" jdbcType="CHAR" property="cNameTypeDescChn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_name_type_code, c_name_type_desc, c_name_type_desc_chn
+  </sql>
+</mapper>

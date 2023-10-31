@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.ScholarlytopicCodesMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.ScholarlytopicCodes">
+    <!--@mbg.generated-->
+    <!--@Table SCHOLARLYTOPIC_CODES-->
+    <result column="c_topic_code" jdbcType="INTEGER" property="cTopicCode" />
+    <result column="c_topic_desc" jdbcType="CHAR" property="cTopicDesc" />
+    <result column="c_topic_desc_chn" jdbcType="CHAR" property="cTopicDescChn" />
+    <result column="c_topic_type_code" jdbcType="INTEGER" property="cTopicTypeCode" />
+    <result column="c_topic_type_desc" jdbcType="CHAR" property="cTopicTypeDesc" />
+    <result column="c_topic_type_desc_chn" jdbcType="CHAR" property="cTopicTypeDescChn" />
+    <result column="c_sortorder" jdbcType="INTEGER" property="cSortorder" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_topic_code, c_topic_desc, c_topic_desc_chn, c_topic_type_code, c_topic_type_desc, 
+    c_topic_type_desc_chn, c_sortorder
+  </sql>
+</mapper>

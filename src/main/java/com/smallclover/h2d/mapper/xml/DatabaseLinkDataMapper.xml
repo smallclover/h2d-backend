@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smallclover.h2d.mapper.DatabaseLinkDataMapper">
+  <resultMap id="BaseResultMap" type="com.smallclover.h2d.entity.DatabaseLinkData">
+    <!--@mbg.generated-->
+    <!--@Table DATABASE_LINK_DATA-->
+    <result column="c_person_id" jdbcType="INTEGER" property="cPersonId" />
+    <result column="c_db_id" jdbcType="INTEGER" property="cDbId" />
+    <result column="c_db_sys_id" jdbcType="CHAR" property="cDbSysId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    c_person_id, c_db_id, c_db_sys_id
+  </sql>
+</mapper>
